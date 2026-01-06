@@ -85,13 +85,13 @@ const About = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="group p-8 rounded-2xl bg-[var(--color-bg)] border border-slate-800 hover:border-emerald-500/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-500/5">
                             <div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300">🏫</div>
-                            <h4 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">[Government Engineering College, Nargund]</h4>
+                            <h4 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">Government Engineering College, Nargund</h4>
                             <p className="text-sm text-slate-400">Department of Computer Science & Engineering</p>
                         </div>
 
                         <div className="group p-8 rounded-2xl bg-[var(--color-bg)] border border-slate-800 hover:border-emerald-500/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-500/5">
                             <div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300">👨‍🏫</div>
-                            <h4 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">Prof. [Nandha Hanchinal]</h4>
+                            <h4 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">Prof. Nandha Hanchinal</h4>
                             <p className="text-sm text-slate-400">Project Guide & Mentor</p>
                         </div>
                     </div>
