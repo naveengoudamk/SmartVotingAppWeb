@@ -47,30 +47,37 @@ const About = () => {
                                 <span>📁</span> Project Documentation
                             </h3>
 
-                            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                                <a href="/Project_Report.pdf" download className="group flex-1 max-w-sm mx-auto flex items-center p-4 rounded-xl border border-slate-700 hover:border-emerald-500 bg-slate-800/50 hover:bg-slate-800 transition-all duration-300">
-                                    <div className="w-14 h-14 rounded-full bg-slate-700 group-hover:bg-emerald-500/20 text-3xl flex items-center justify-center transition-colors">
+                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 justify-center">
+                                <a href="/Project_Report.pdf" download className="group flex flex-col items-center p-6 rounded-xl border border-slate-700 hover:border-emerald-500 bg-slate-800/50 hover:bg-slate-800 transition-all duration-300 hover:-translate-y-1">
+                                    <div className="w-16 h-16 rounded-full bg-slate-700 group-hover:bg-emerald-500/20 text-4xl flex items-center justify-center transition-colors mb-4">
                                         📄
                                     </div>
-                                    <div className="ml-5 text-left flex-1">
-                                        <h4 className="font-bold text-white group-hover:text-emerald-400 transition-colors">Project Report</h4>
-                                        <p className="text-xs text-slate-400">Download PDF File</p>
-                                    </div>
-                                    <div className="text-slate-500 group-hover:text-emerald-400 transform group-hover:translate-x-1 transition-all pr-2">
-                                        ⬇
+                                    <h4 className="font-bold text-white group-hover:text-emerald-400 transition-colors mb-1">Project Report</h4>
+                                    <p className="text-xs text-slate-400 mb-3">Comprehensive Documentation</p>
+                                    <div className="text-slate-500 group-hover:text-emerald-400 transition-all">
+                                        ⬇ Download PDF
                                     </div>
                                 </a>
 
-                                <a href="/Project_Presentation.pptx" download className="group flex-1 max-w-sm mx-auto flex items-center p-4 rounded-xl border border-slate-700 hover:border-blue-500 bg-slate-800/50 hover:bg-slate-800 transition-all duration-300">
-                                    <div className="w-14 h-14 rounded-full bg-slate-700 group-hover:bg-blue-500/20 text-3xl flex items-center justify-center transition-colors">
+                                <a href="/Research_Paper.pdf" download className="group flex flex-col items-center p-6 rounded-xl border border-slate-700 hover:border-purple-500 bg-slate-800/50 hover:bg-slate-800 transition-all duration-300 hover:-translate-y-1">
+                                    <div className="w-16 h-16 rounded-full bg-slate-700 group-hover:bg-purple-500/20 text-4xl flex items-center justify-center transition-colors mb-4">
+                                        📚
+                                    </div>
+                                    <h4 className="font-bold text-white group-hover:text-purple-400 transition-colors mb-1">Research Paper</h4>
+                                    <p className="text-xs text-slate-400 mb-3">Academic Publication</p>
+                                    <div className="text-slate-500 group-hover:text-purple-400 transition-all">
+                                        ⬇ Download PDF
+                                    </div>
+                                </a>
+
+                                <a href="/Project_Presentation.pptx" download className="group flex flex-col items-center p-6 rounded-xl border border-slate-700 hover:border-blue-500 bg-slate-800/50 hover:bg-slate-800 transition-all duration-300 hover:-translate-y-1">
+                                    <div className="w-16 h-16 rounded-full bg-slate-700 group-hover:bg-blue-500/20 text-4xl flex items-center justify-center transition-colors mb-4">
                                         📽️
                                     </div>
-                                    <div className="ml-5 text-left flex-1">
-                                        <h4 className="font-bold text-white group-hover:text-blue-400 transition-colors">Presentation</h4>
-                                        <p className="text-xs text-slate-400">Download PPT File</p>
-                                    </div>
-                                    <div className="text-slate-500 group-hover:text-blue-400 transform group-hover:translate-x-1 transition-all pr-2">
-                                        ⬇
+                                    <h4 className="font-bold text-white group-hover:text-blue-400 transition-colors mb-1">Presentation</h4>
+                                    <p className="text-xs text-slate-400 mb-3">Slide Deck</p>
+                                    <div className="text-slate-500 group-hover:text-blue-400 transition-all">
+                                        ⬇ Download PPT
                                     </div>
                                 </a>
                             </div>
