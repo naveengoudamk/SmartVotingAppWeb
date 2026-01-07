@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from './components/Hero';
 import Features from './components/Features';
+import Gallery from './components/Gallery';
 import Team from './components/Team';
 import Footer from './components/Footer';
 
@@ -11,6 +12,7 @@ function App() {
     <main className="min-h-screen">
       <Hero />
       <Features />
+      <Gallery />
       <About />
       <Team />
       <Footer />

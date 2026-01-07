@@ -12,6 +12,21 @@ This web portal serves as a gateway for users to download the Android applicatio
 - **Team Showcase**: A dedicated section highlighting the project lead, developers, and academic guidance.
 - **Aesthetic UI**: Features glassmorphism effects, smooth animations, and a professional color palette (Emerald & Slate).
 
+### 📸 Screenshots & Diagrams
+
+#### App Interface
+| Dashboard | Login |
+|:---:|:---:|
+| <img src="public/snap/AppDashboard.png" width="300" /> | <img src="public/snap/AppLogin.png" width="300" /> |
+
+#### System Architecture
+<img src="public/snap/SystemArchitecture.jpeg" width="600" />
+
+#### Workflows
+| Flowchart | Use Case |
+|:---:|:---:|
+| <img src="public/snap/Flowchart.png" width="400" /> | <img src="public/snap/use_case_diagram.jpeg" width="400" /> |
+
 ---
 
 ## 🛠️ Technology Stack
