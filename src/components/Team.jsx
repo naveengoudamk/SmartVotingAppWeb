@@ -1,10 +1,10 @@
 import React from 'react';
 
-const TeamMember = ({ name, role, isLead, github, linkedin }) => (
+const TeamMember = ({ name, role, isLead, github, linkedin, image }) => (
     <div className={`relative group ${isLead ? 'md:col-span-2 lg:col-span-1 border-emerald-500/50' : 'border-slate-700/50'}`}>
         <div className="h-full bg-[var(--color-bg)] p-6 rounded-2xl border transition-all duration-300 hover:-translate-y-2 hover:border-emerald-500 hover:shadow-xl hover:shadow-emerald-500/10">
-            <div className={`w-24 h-24 mx-auto mb-6 rounded-full flex items-center justify-center text-3xl shadow-lg ${isLead ? 'bg-gradient-to-br from-emerald-400 to-cyan-500' : 'bg-slate-800'}`}>
-                {isLead ? '👨‍💻' : '👤'}
+            <div className={`w-28 h-28 mx-auto mb-6 rounded-full p-1 shadow-lg ${isLead ? 'bg-gradient-to-br from-emerald-400 to-cyan-500' : 'bg-slate-700'}`}>
+                <img src={image} alt={name} className="w-full h-full rounded-full object-cover border-4 border-[var(--color-bg)]" />
             </div>
 
             <h3 className="text-xl font-bold mb-1">{name}</h3>
@@ -44,6 +44,7 @@ const Team = () => {
                         name="Naveengouda M K"
                         role="Project Lead & Developer"
                         isLead={true}
+                        image="/images/team/naveen.png"
                         github="https://github.com/naveengoudamk"
                         linkedin="https://linkedin.com/in/"
                     />
@@ -53,22 +54,25 @@ const Team = () => {
                         name="Praveen Matti"
                         role="Full Stack Developer"
                         isLead={false}
+                        image="/images/team/praveen.png"
                         github="https://github.com/praveenmatti"
-                        linkedin="https://github.com/praveenmatti"
+                        linkedin="https://www.linkedin.com/in/praveen-matti"
                     />
                     <TeamMember
                         name="Basappa B"
                         role="UI/UX Designer"
                         isLead={false}
-                        github=""
-                        linkedin=""
+                        image="/images/team/basappa.png"
+                        github="https://github.com/basappabaluragi"
+                        linkedin="https://www.linkedin.com/in/basappa-mallappa-baluragi-2575132a6/"
                     />
                     <TeamMember
                         name="Raghu M N "
                         role="Database Admin"
                         isLead={false}
-                        github=""
-                        linkedin=""
+                        image="/images/team/raghu.png"
+                        github="https://github.com/RaghumRaghum-lang"
+                        linkedin="https://www.linkedin.com/in/raghu-m-raghu-m-91a76335b/"
                     />
                 </div>
 
