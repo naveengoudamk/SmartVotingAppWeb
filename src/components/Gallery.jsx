@@ -2,21 +2,20 @@ import React from 'react';
 
 const Gallery = () => {
     const keyScreens = [
-        { src: '/snap/AppLogin.png', alt: 'Secure Login', title: 'Secure Aadhaar Login' },
-        { src: '/snap/AppDashboard.png', alt: 'User Dashboard', title: 'Voter Dashboard' },
+        { src: '/snap/AppLogin.png', alt: 'Secure Login' },
+        { src: '/snap/AppDashboard.png', alt: 'User Dashboard' },
     ];
 
     const diagrams = [
-        { src: '/snap/SystemArchitecture.jpeg', alt: 'System Architecture', title: 'System Architecture' },
-        { src: '/snap/Flowchart.png', alt: 'Process Flow', title: 'Process Flowchart' },
-        { src: '/snap/use_case_diagram.jpeg', alt: 'Use Case Diagram', title: 'Use Case Diagram' },
-        { src: '/snap/uml_diagram.jpeg', alt: 'UML Diagram', title: 'Class Diagram' },
+        { src: '/snap/SystemArchitecture.jpeg', alt: 'System Architecture' },
+        { src: '/snap/Flowchart.png', alt: 'Process Flow' },
+        { src: '/snap/use_case_diagram.jpeg', alt: 'Use Case Diagram' },
+        { src: '/snap/uml_diagram.jpeg', alt: 'UML Diagram' },
     ];
 
     const screenshots = Array.from({ length: 12 }, (_, i) => ({
         src: `/snap/screenshot_${i + 1}.png`,
-        alt: `App Interface ${i + 1}`,
-        title: `App Interface ${i + 1}`
+        alt: `App Interface ${i + 1}`
     }));
 
     const allImages = [...keyScreens, ...diagrams, ...screenshots];
@@ -48,21 +47,16 @@ const Gallery = () => {
                                 <div
                                     key={index}
                                     className="group relative bg-[var(--color-surface)] rounded-2xl shadow-xl overflow-hidden border border-slate-700/50 hover:border-emerald-500/50 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-emerald-500/10 flex-shrink-0"
-                                    style={{ width: '350px' }}
+                                    style={{ width: '350px', height: '280px' }}
                                 >
-                                    <div className="overflow-hidden bg-slate-900/50 flex items-center justify-center h-64 relative">
+                                    <div className="w-full h-full overflow-hidden bg-slate-900/50 flex items-center justify-center relative">
                                         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
                                         <img
                                             src={img.src}
                                             alt={img.alt}
-                                            className="w-full h-full object-contain p-2 group-hover:scale-110 transition-transform duration-500"
+                                            className="w-full h-full object-contain p-3 group-hover:scale-110 transition-transform duration-500"
                                             loading="lazy"
                                         />
-                                    </div>
-                                    <div className="p-5 border-t border-slate-700/50 relative z-20 bg-[var(--color-surface)]">
-                                        <h3 className="text-lg font-semibold text-slate-200 group-hover:text-emerald-400 transition-colors text-center">
-                                            {img.title}
-                                        </h3>
                                     </div>
                                 </div>
                             ))}
