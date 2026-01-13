@@ -7,9 +7,9 @@ const Hero = () => {
         {/* App Logo */}
         <div className="mb-8 animate-fade-in flex justify-center" style={{ animationDelay: '0s' }}>
           <img
-            src="/app-logo.webp"
+            src="/app-logo.png"
             alt="Smart Voting App Logo"
-            className="w-32 h-32 md:w-40 md:h-40 rounded-3xl shadow-2xl shadow-emerald-500/20 hover:scale-105 transition-transform duration-300"
+            className="w-32 h-32 md:w-40 md:h-40 rounded-full shadow-2xl shadow-emerald-500/20 hover:scale-105 transition-transform duration-300"
           />
         </div>
 
